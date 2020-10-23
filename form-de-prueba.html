@@ -9,33 +9,38 @@
     <form>
         <div>
             
-            <label for="name">Nombre</label>
-            <input type="text" name="name">
+            <label >Nombre</label>
+            <input required minlength="2" maxlength="20" type="text" name="name">
         </div>
         <div>
 
-            <label for="apellido">Apellido</label>
-            <input type="text">
+            <label  >Apellido</label>
+            <input required minlength="2" maxlength="20" type="text">
         </div>
         <div>
 
-            <label for="apellido">DNI / CUIT / CUIL</label>
-            <input type="text">
+            <label  >DNI / CUIT / CUIL</label>
+            <input  required type="text">
         </div>
         <div>
-            <label for="apellido">AlturaL</label>
-            <input type="number">
+
+            <label  >Email</label>
+            <input  required minlength="8" maxlength="11" type="text">
+        </div>
+        <div>
+            <label for="altura">Altura</label>
+            <input min="0.1" max="3.2" step="0.1" required type="number">
 
         </div>
         <div>
 
-            <label for="apellido">Peso</label>
-            <input type="number">
+            <label  >Peso</label>
+            <input min="1" max="300" step="0.1" required type="number">
         </div>
         <div>
 
-            <label for="apellido">Edad</label>
-            <input type="number">
+            <label  >Edad</label>
+            <input min="14" max="100" type="number">
         </div>
         <button>Enviar</button>
     
